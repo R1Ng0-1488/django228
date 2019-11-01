@@ -1,0 +1,52 @@
+ul {
+	background-color:blue;
+}
+div {
+	background-color:#E6E9B8;
+}
+
+li {
+	background-color:#E8EFA2;
+}
+
+body {
+	background-color:#E6E9B8;
+}
+
+header h1 {
+	background: url("3.jpg") left / auto 100% no-repeat, 
+	url("2.jpg") right / auto 100% no-repeat ;
+}
+
+.root {
+	font-size: larger;
+}
+
+img.main-image {
+	width:300px;
+}
+img.additional-image {
+	width: 180px;
+}
+
+a {
+	color:black;
+}
+
+span {
+	color: red;
+}
+
+#lol {
+	background-color: blue;
+}
+
+#kek:hover{
+	background-color: red;
+	color: white;
+}
+
+#lol:hover {
+	background-color: red;
+	color: white;
+}

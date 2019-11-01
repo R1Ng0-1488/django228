@@ -26,7 +26,7 @@ SECRET_KEY = 'v)h03$g=4da+$owh_^g*+(ns=4-csv)tl(d)$!b#$7w-pj^^bi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['zalupa00132.com']
+ALLOWED_HOSTS = ['zalupa00132.com']#
 
 
 # Application definition
