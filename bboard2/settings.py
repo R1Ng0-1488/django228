@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -50,6 +51,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -134,7 +136,7 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'main.AdvUser'
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'# поменять на smtp когда выложу сайт
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'# поменять на smtp когда выложу сайт
 # DEFAULT_FROM_EМAIL = 'webmaster@localhost'
 EMAIL_HOST = 'smtp.mail.ru' #''smtp
 EMAIL_HOST_USER = 'yipar.yarp.91@bk.ru'#
@@ -175,3 +177,6 @@ THUMBNAIL_BASEDIR = 'thumbnails'
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_URLS_REGEX = r'^/api/.*$'
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
