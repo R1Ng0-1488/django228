@@ -163,7 +163,9 @@ MEDIA_URL = '/media/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+STATIC_TMP = os.path.join(BASE_DIR, 'static')
 
+os.makedirs(STATIC_TMP, exist_ok=True)
 
 THUMBNAIL_ALIASES = {
     '': {
