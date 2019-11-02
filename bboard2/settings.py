@@ -161,7 +161,7 @@ SOCIAL_AUTH_VK_OAUTH2_SCOPE = ['email']
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATIC_TMP = os.path.join(BASE_DIR, 'static')
 
