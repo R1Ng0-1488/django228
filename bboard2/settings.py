@@ -136,13 +136,13 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'main.AdvUser'
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'# поменять на smtp когда выложу сайт
-# DEFAULT_FROM_EМAIL = 'webmaster@localhost'
-EMAIL_HOST = 'smtp.mail.ru' #''smtp
-EMAIL_HOST_USER = 'yipar.yarp.91@bk.ru'#
-EMAIL_HOST_PASSWORD = 'qwe123qwe1231'#
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'# поменять на smtp когда выложу сайт
+# # DEFAULT_FROM_EМAIL = 'webmaster@localhost'
+# EMAIL_HOST = 'smtp.mail.ru' #''smtp
+# EMAIL_HOST_USER = 'yipar.yarp.91@bk.ru'#
+# EMAIL_HOST_PASSWORD = 'qwe123qwe1231'#
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
 
 
 AUTHENTICATION_BACKENDS = (
